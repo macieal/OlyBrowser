@@ -1,0 +1,102 @@
+        body {
+            background-position: 50% 50%;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+            color: rgb(0, 0, 0);
+            animation: alternate 2s enter;
+            height: 100vh;
+            overflow: hidden;
+            display: grid;
+            place-items: center;
+        }
+
+        @keyframes enter {
+            0% {
+                opacity: 0%;
+            }
+            100% {
+                opacity: 100%;
+            }
+        }
+
+        form {
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        #pesquisar {
+            padding: 25px;
+            width: 30vw;
+            font-size: 16px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 0px rgb(0, 0, 0);
+            border: solid 0.1vw black;
+            transition: 0.6s;
+            position: fixed;
+            left: 50%;
+            top: 60%;
+            transform: translate(-50%, -50%);
+            z-index: 50;
+            opacity: 50%;
+        }
+
+        #pesquisar:focus {
+            outline: none;
+            box-shadow: none;
+            transform: scale(1.05);
+            border-radius: 5px;
+            box-shadow: 0px 0px 8px rgb(0, 0, 0);
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 100%;
+        }
+
+        #pesquisar:hover { opacity: 100%; }
+
+        input[type="submit"] {
+            display: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-left: 10px;
+            border: none;
+            background-color: black;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            animation: infinite 10s buscar;
+            transition: all 0.3s ease;
+            box-shadow: 15px 10px 8px rgba(255, 255, 255, 0.2);
+        }
+
+        input[type="submit"]:hover {
+            transform: scale(1.1);
+        }
+
+        h4{
+            margin-top: 3%;
+            color: rgb(255, 255, 255);
+            position: absolute;
+            left: 40%;
+        }
+
+        .ads{
+            margin-top: 20px;
+            display: flex;
+        }
+
+        #back{ display: none; background-color: rgba(0, 0, 0); opacity: 75%; padding: 500%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+        @keyframes a { 0%{ opacity: 0%; } 100%{ opacity: 75%; } }
+        @keyframes b { 0%{ opacity: 75%; } 100%{ opacity: 0%; } }
+
+        #wb{
+            background-color: white;
+            border-radius: 2vw;
+            border: solid 0.1vw black;
+        }
+
+        footer{ z-index: -1; background-color: white; place-items: center; display: grid; padding: 1vw; position: fixed; top: 70%; left: 50%; font-size: 1vw; transform: translate(-50%, -50%); border-radius: 100vw; }
