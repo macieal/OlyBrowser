@@ -1,2 +1,2 @@
-# WebInfinityBrowser
+# Oly - Browser
 Direitos Autorais© SingularyStudios
